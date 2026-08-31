@@ -14,7 +14,7 @@ public class Ex04 {
 				System.out.print("28 Days Later");
 				break;
 			default:
-				System.out.print("I don't know");
+				System.out.print("I don't know.");
 		}
 	}
 }
