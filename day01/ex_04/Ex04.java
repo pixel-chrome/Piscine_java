@@ -8,7 +8,7 @@ public class Ex04 {
 				System.out.println("The Sixth Sense");
 				break;
 			case 23:
-				System.out.println("The Numbers 23");
+				System.out.println("The Number 23");
 				break;
 			case 28:
 				System.out.println("28 Days Later");
