@@ -1,8 +1,11 @@
-import java.util.List;
+import java.util.ArrayList;
 
 class TestMain {
 	public static void main (String[] args) {
-		List<String> liste= new("Volvo","BMV","Ford","Mazda");
+		ArrayList<String> liste = new ArrayList<>();
+		liste.add("BMW");
+		liste.add("Volvo");
+		liste.add("pdva");
 		Ex03.printArray(liste);
 	}
 }
