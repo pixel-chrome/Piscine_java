@@ -18,13 +18,13 @@ public class Gecko {
 		return(energy);
 	}
 	public void setEnergy(int energy){
-		if(this.energy>=0 || this.energy <= 100){
+		if(energy>=0 && energy <= 100){
 			this.energy = energy;
 		}
-		else if(this.energy>100){
+		else if(energy>100){
 			this.energy = 100;
 		}
-		else if(this.energy<100){
+		else if(energy<0){
 			this.energy = 0;
 		}
 	}
