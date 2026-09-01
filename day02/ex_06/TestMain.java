@@ -12,5 +12,10 @@ public class TestMain{
 		mimi.eat("Meat");
 		System.out.println(mimi.getEnergy());
 
+		mimi.setEnergy(1);
+		System.out.println("mimi=1");
+		mimi.eat("vegetable");
+		System.out.println(mimi.getEnergy());
+
 	}
 }

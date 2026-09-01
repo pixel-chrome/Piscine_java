@@ -21,6 +21,12 @@ public class Gecko {
 		if(this.energy>=0 || this.energy <= 100){
 			this.energy = energy;
 		}
+		else if(this.energy>100){
+			this.energy = 100;
+		}
+		else if(this.energy<100){
+			this.energy = 0;
+		}
 	}
 
 	public void helloNewGecko(){
