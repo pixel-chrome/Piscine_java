@@ -38,7 +38,7 @@ public class Astronaut{
 
 	public void doActions(planet.Mars planet){
 		System.out.println(name + ": Started a mission!");
-		destination = planet.getLandingSite();
+		this.destination = planet.getLandingSite();
 	}
 
 	public void doActions(chocolate.Mars choco){

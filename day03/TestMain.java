@@ -16,8 +16,8 @@ public class TestMain{
 		System.out.println("action parametre = planet");
 		Charles.doActions(Jupiter);
 		System.out.println(Charles.getDestination());
-		System.out.println("action perametre = null");
-		Charles.doActions(nul);
+		System.out.println("action perametre = vide");
+		Charles.doActions();
 
 		planet.Mars tamere = new planet.Mars("Here and there");
 		planet.Mars tagrandmere = new planet.Mars("Up");
