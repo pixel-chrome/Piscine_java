@@ -99,7 +99,7 @@ public class Gecko {
 
 	public void work(){
 		if(energy>=25){
-			System.out.println("I'm Working T.T");
+			System.out.println("I'm working T.T");
 			energy = energy - 9;
 		}
 		else if(energy<=24){
