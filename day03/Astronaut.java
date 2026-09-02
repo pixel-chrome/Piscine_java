@@ -48,6 +48,8 @@ public class Astronaut{
 	}
 
 	public void doNothing(){
-		System.out.println(name + ": I may have done nothing, but I have " + snacks + " Mars to eat at least!");
+		if(destination == null){
+			System.out.println(name + ": I may have done nothing, but I have " + snacks + " Mars to eat at least!");
+		}
 	}
 }

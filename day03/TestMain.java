@@ -5,16 +5,19 @@ public class TestMain{
 		Astronaut Charles = new Astronaut("Charles");
 		chocolate.Mars barre = new chocolate.Mars();
 		planet.Mars Jupiter = new planet.Mars("Jupiter");
+		planet.Mars nul = new planet.Mars(null);
 		
-		System.out.println("action vide");
+		System.out.println("action sans parametre");
 		Charles.doActions();
 
-		System.out.println("action choco");
+		System.out.println("action parametre = choco");
 		Charles.doActions(barre);
 
-		System.out.println("action planet");
+		System.out.println("action parametre = planet");
 		Charles.doActions(Jupiter);
 		System.out.println(Charles.getDestination());
+		System.out.println("action perametre = null");
+		Charles.doActions(nul);
 
 		planet.Mars tamere = new planet.Mars("Here and there");
 		planet.Mars tagrandmere = new planet.Mars("Up");
