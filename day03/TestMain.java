@@ -1,9 +1,11 @@
+import chocolate.*;
+import planet.*;
 public class TestMain{
 	public static void main(String[] args){
-		Astronaut Mutta = new Astronaut("Mutta");
-		Astronaut Hibito = new Astronaut("Hibito");
+		chocolate.Mars snack = new chocolate.Mars();
+		planet.Mars rock = new planet.Mars("Viking 1");
 
-		System.out.println(Mutta.getId());
-		System.out.println(Hibito.getId());
+		System.out.println(snack.getId());
+		System.out.println(rock.getLandingSite());
 	}
 }
