@@ -33,6 +33,7 @@ public class Astronaut{
 
 	public void doActions(){
 		System.out.println(name + ": Nothing to do");
+		doNothing();
 	}
 
 	public void doActions(planet.Mars planet){
@@ -43,5 +44,10 @@ public class Astronaut{
 	public void doActions(chocolate.Mars choco){
 		System.out.println(name + ": Thanks for this Mars number " + choco.getId());
 		snacks = snacks + 1;
+		doNothing();
+	}
+
+	public void doNothing(){
+		System.out.println(name + ": I may have nothing, but I have " + snacks + " Mars to eat at least!");
 	}
 }
