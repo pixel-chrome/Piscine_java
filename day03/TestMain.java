@@ -16,11 +16,29 @@ public class TestMain{
 		Charles.doActions(Jupiter);
 		System.out.println(Charles.getDestination());
 
-		planet.Mars titi = new planet.Mars("Here and there");
-		planet.Mars toto = new planet.Mars("Up");
+		planet.Mars tamere = new planet.Mars("Here and there");
+		planet.Mars tagrandmere = new planet.Mars("Up");
 
-		planet.moon.Phobos phobos1 = new planet.moon.Phobos(titi, "Alpha 3");
-		planet.moon.Phobos phobos2 = new planet.moon.Phobos(toto, "Beta 1");
+		planet.moon.Phobos phobos1 = new planet.moon.Phobos(tamere, "Alpha 3");
+		planet.moon.Phobos phobos2 = new planet.moon.Phobos(tagrandmere, "Beta 1");
 		System.out.println(phobos1.getLandingSite());
+
+		System.out.println("=========================");
+		Astronaut mutta = new Astronaut("Mutta");
+		Astronaut hibito = new Astronaut("Hibito");
+		Astronaut serika = new Astronaut("Serika");
+
+		Team spaceBro = new Team("SpaceBrothers");
+		spaceBro.add(mutta);
+		spaceBro.add(hibito);
+		spaceBro.add(serika);
+		System.out.println(spaceBro.countMembers());
+
+		planet.Mars titi = new planet.Mars("Hill");
+		mutta.doActions(titi);
+		spaceBro.showMembers();
+		spaceBro.remove(hibito);
+		System.out.println(spaceBro.countMembers());
+
 	}
 }
