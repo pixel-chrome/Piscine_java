@@ -44,6 +44,24 @@ class Team{
 			}
 		}
 	}
+
+	public void doActions(){
+		System.out.println(teamName + ": Nothing to do.");
+	}
+
+	public void doActions(chocolate.Mars barre){
+		for(int i = 0; i<teamAst.size(); i++){
+			personne = teamAst.get(i);
+			personne.doActions(barre);
+		}
+	}
+
+	public void doActions(planet.Mars planette){
+		for(int i = 0; i<teamAst.size(); i++){
+			personne = teamAst.get(i);
+			personne.doActions(planette);
+		}
+	}
 }
 
 		
