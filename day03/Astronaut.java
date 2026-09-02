@@ -32,7 +32,7 @@ public class Astronaut{
 	}
 
 	public void doActions(){
-		System.out.println(name + ": Nothing to do");
+		System.out.println(name + ": Nothing to do.");
 		doNothing();
 	}
 
