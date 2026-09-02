@@ -115,7 +115,7 @@ public class Gecko {
 	}
 
 	public void saySorry(Gecko friend){
-		System.out.println("Sorry " + friend.getName() +  ", I'm too tired to go out tonight");
+		System.out.println("Sorry " + friend.getName() +  ", I'm too tired to go out tonight.");
 	}
 
 	public void sayTooBad(){
