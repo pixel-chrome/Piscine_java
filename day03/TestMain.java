@@ -43,5 +43,8 @@ public class TestMain{
 		spaceBro.remove(hibito);
 		System.out.println(spaceBro.countMembers());
 
+		planet.moon.Phobos petitebite = new planet.moon.Phobos(Jupiter,"landingdepd");
+		spaceBro.doActions(petitebite);
+
 	}
 }

@@ -41,6 +41,11 @@ public class Astronaut{
 		this.destination = planet.getLandingSite();
 	}
 
+	public void doActions(planet.moon.Phobos phobos){
+		System.out.println(name + ": Started a mission!");
+		this.destination = phobos.getLandingSite();
+	}
+
 	public void doActions(chocolate.Mars choco){
 		System.out.println(name + ": Thanks for this Mars number " + choco.getId());
 		snacks = snacks + 1;
