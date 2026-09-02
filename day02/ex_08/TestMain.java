@@ -18,8 +18,10 @@ public class TestMain{
 		bob.setEnergy(29);
 		mimi.fraternize(bob);
 		
+		System.out.println("mimi = "+mimi.getEnergy());
 		System.out.println("mimi encouters Snake");
 		mimi.fraternize(AAAR);
+		System.out.println("mimi = "+mimi.getEnergy());
 		
 		System.out.println("mimi=9 + Snake");
 		mimi.setEnergy(9);
