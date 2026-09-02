@@ -157,6 +157,7 @@ public class Gecko {
 	public void fraternize(Snake enemy){
 		if(energy >= 10){
 			snakeEnergy();
+			energy = 0;
 		}
 		else if (energy < 10){
 			snakeNoEnergy();
