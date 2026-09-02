@@ -1,4 +1,5 @@
 package planet.moon;
+import planet.Mars;
 
 public class Phobos{
 	private planet.Mars mars;
@@ -17,6 +18,10 @@ public class Phobos{
 
 	public String getLandingSite(){
 		return(landingSite);
+	}
+
+	public planet.Mars getMars(){
+		return(this.mars);
 	}
 }
 		
