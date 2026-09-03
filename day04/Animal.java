@@ -41,7 +41,7 @@ public class Animal{
 		this.name = name;
 	}
 
-	public int getNumberOfAnimals(){
+	public static int getNumberOfAnimals(){
 		if(numberOfAnimals == 0){
 			System.out.println("There are currently 0 animals in our world.");
 		}
