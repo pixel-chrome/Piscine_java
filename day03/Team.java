@@ -1,15 +1,15 @@
 import java.util.ArrayList;
 
 class Team{
-	private String teamName;
+	private String name;
 	public ArrayList<Astronaut> teamAst = new ArrayList<>();
 
-	public Team(String teamName){
-		this.teamName = teamName;
+	public Team(String name){
+		this.name = name;
 	}
 
 	public String getName(){
-		return(teamName);
+		return(name);
 	}
 
 	public void add(Astronaut personne){
@@ -26,7 +26,7 @@ class Team{
 
 	public void showMembers(){
 		if(teamAst.size() > 0){
-			System.out.print(teamName + ": ");
+			System.out.print(name + ": ");
 			for(int i = 0; i<teamAst.size(); i++){
 				if(teamAst.get(i).getDestination() != null){
 					System.out.print(teamAst.get(i).getName() + " on mission");
@@ -46,7 +46,7 @@ class Team{
 	}
 
 	public void doActions(){
-		System.out.println(teamName + ": Nothing to do.");
+		System.out.println(name + ": Nothing to do.");
 	}
 
 	public void doActions(chocolate.Mars barre){
