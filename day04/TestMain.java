@@ -13,5 +13,12 @@ class TestMain{
 		willy.eat(titi);
 		willy.status();
 
+		System.out.println("============");
+		GreatWhite blanc = new GreatWhite("Blanc");
+		BlueShark bleu = new BlueShark("Bleu");
+		blanc.eat(titi);
+		blanc.eat(willy);
+		blanc.eat(blanc);
+
 	}
 }
