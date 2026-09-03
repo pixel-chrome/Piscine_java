@@ -5,7 +5,7 @@ public class BlueShark extends Shark{
 
 	@Override
 	public boolean canEat(Animal food){
-		if((food.getType() == "fish") && (food != this)){
+		if(food.getType().equals("fish") && food != this){
 			return(true);
 		}
 		else{

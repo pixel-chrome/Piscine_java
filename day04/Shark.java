@@ -34,7 +34,7 @@ public class Shark extends Animal{
 			smellBlood(false);
 		}
 		else{
-			System.out.println(getName() +  ": It's not worthy my time.");
+			System.out.println(getName() +  ": It's not worth my time.");
 		}
 	}
 
