@@ -15,7 +15,7 @@ public class Shark extends Animal{
 			System.out.println(getName() + " is smelling blood and wants to kill.");
 		}
 		else {
-			System.out.println(getName() + " is swimming peacfully.");
+			System.out.println(getName() + " is swimming peacefully.");
 		}
 	}
 
