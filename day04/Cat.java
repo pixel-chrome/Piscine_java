@@ -1,16 +1,21 @@
 public class Cat extends Animal{
 	private String color = "grey";
 
-	public class Cat(String name){
+	public Cat(String name){
 		super(name, 4, Type.MAMMAL);
-		System.out.println(name + ": MEEEOOWWWW");
+		System.out.println(getName() + ": MEEEOOWWWW");
 	}
-	public class Cat(String name, String color){
+	public Cat(String name, String color){
 		super(name, 4, Type.MAMMAL);
 		this.color = color;
-		System.out.println(name + ": MEEEOOWWWW");
+		System.out.println(getName() + ": MEEEOOWWWW");
 	}
 
-	public class void meow(){
-		System.out.println(name + " the " + color + " kitty is meowing.");
+	public String getColor(){
+		return(color);
 	}
+
+	public void meow(){
+		System.out.println(getName() + " the " + getColor() + " kitty is meowing.");
+	}
+}
