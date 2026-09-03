@@ -1,8 +1,11 @@
 class TestMain{
 	public static void main(String[] args){
-		Cat isidore = new Cat("Isidore", "orange");
-		System.out.println(isidore.getName() + " has " + isidore.getLegs() + " legs and is a " + isidore.getType() + ".");
-		isidore.meow();
-
+		Canary titi = new Canary("Titi");
+		Shark willy = new Shark("Willy");
+		willy.status();
+		willy.smellBlood(true);
+		willy.status();
+		titi.layEgg();
+		System.out.println(titi.getEggsCount());
 	}
 }
