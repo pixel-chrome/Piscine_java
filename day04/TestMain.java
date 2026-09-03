@@ -20,5 +20,9 @@ class TestMain{
 		blanc.eat(willy);
 		blanc.eat(blanc);
 
+		bleu.eat(titi);
+		bleu.eat(willy);
+		bleu.eat(bleu);
+
 	}
 }
