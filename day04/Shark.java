@@ -18,5 +18,26 @@ public class Shark extends Animal{
 			System.out.println(getName() + " is swimming peacfully.");
 		}
 	}
+
+	public boolean canEat(Animal food){
+		if(food != this){
+			return(true);
+		}
+		else{
+			return(false);
+		}
+	}
+
+	public void eat(Animal food){
+		if(canEat(food)){
+			System.out.println(getName() + " ate a " + food.getType() + " named " + food.getName() + ".");
+			smellBlood(false);
+		}
+		else{
+			System.out.println(getName() +  ": It's not worthy my time.");
+		}
+	}
+
+
 }
 

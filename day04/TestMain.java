@@ -7,5 +7,11 @@ class TestMain{
 		willy.status();
 		titi.layEgg();
 		System.out.println(titi.getEggsCount());
+		System.out.println("============");
+
+		willy.eat(willy);
+		willy.eat(titi);
+		willy.status();
+
 	}
 }
