@@ -55,7 +55,7 @@ public class Animal{
 	}
 	
 
-	public void phrase(Type type, int number){
+	public static void phrase(Type type, int number){
 		String typeF = type.toString().toLowerCase();
 		if(number == 0){
 			System.out.println("There are currently 0 " + typeF +" in our world.");
@@ -71,20 +71,17 @@ public class Animal{
 		}
 	}
 			
-
-
-
-	public int getNumberOfMammals(){
+	public static int getNumberOfMammals(){
 		phrase(Type.MAMMAL, numberOfMammals);
 		return(numberOfMammals);
 	}
 
-	public int getNumberOfFish(){
+	public static int getNumberOfFish(){
 		phrase(Type.FISH, numberOfFish);
 		return(numberOfFish);
 	}
 	
-	public int getNumberOfBirds(){
+	public static int getNumberOfBirds(){
 		phrase(Type.BIRD, numberOfBirds);
 		return(numberOfBirds);
 	}
