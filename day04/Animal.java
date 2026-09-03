@@ -57,8 +57,11 @@ public class Animal{
 
 	public static void phrase(Type type, int number){
 		String typeF = type.toString().toLowerCase();
-		if(number == 0){
+		if(number == 0 && type != Type.FISH){
 			System.out.println("There are currently 0 " + typeF +"s in our world.");
+		}
+		else if(number == 0 && type == Type.FISH){
+			System.out.println("There are currently 0 " + typeF +" in our world.");
 		}
 		else if(number == 1){
 			System.out.println("There is currently 1 " + typeF +" in our world.");
