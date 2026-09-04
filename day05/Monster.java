@@ -1,6 +1,6 @@
 public abstract class Monster extends Unit{
 	protected int damage = 0;
-	protected int apCost = 0;
+	protected int apcost = 0;
 
 	public Monster(String name, int hp, int ap){
 		super(name, hp, ap);
@@ -11,7 +11,7 @@ public abstract class Monster extends Unit{
 	}
 
 	public int getApcost(){
-		return(apCost);
+		return(apcost);
 	}
 
 	@Override
@@ -23,10 +23,10 @@ public abstract class Monster extends Unit{
 	@Override
 	public boolean attack(Fighter guy){
 		if(getCloseTarget() instanceof Unit){
-			if(getAp() >= apCost){
+			if(getAp() >= apcost){
 				System.out.println(getName() + " attacks " + guy.getName());
 				guy.receiveDamage(this.getDamage());
-				this.ap = getAp() - apCost;
+				this.ap = getAp() - apcost;
 				return true;
 			}
 			else{
