@@ -18,7 +18,7 @@ public class GreatWhite extends Shark{
 	@Override
 	public void eat(Animal food){
 		if(canEat(food)){
-			smellBlood(false)
+			smellBlood(false);
 			System.out.println(getName() + " ate a " + food.getType() + " named " + food.getName() + ".");
 			if(food instanceof Shark){
 				System.out.println(getName() + ": The best meal one could wish for.");
