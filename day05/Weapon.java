@@ -23,7 +23,7 @@ public abstract class Weapon{
 		return(damage);
 	}
 
-	public boolean getMelee(){
+	public boolean isMelee(){
 		return(melee);
 	}
 
