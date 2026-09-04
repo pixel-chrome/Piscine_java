@@ -1,8 +1,9 @@
-public abstract Unit implements Fighter{
+public abstract class Unit implements Fighter{
 	private String name;
 	private int hp;
 	private int ap;
-	private boolean closeTarget;
+	private Unit closeTarget;
+	private boolean alive = true;
 
 	protected Unit(String name, int hp, int ap){
 		this.name = name;
@@ -26,16 +27,8 @@ public abstract Unit implements Fighter{
 	}
 
 	@Override
-
-
-	@Override
-	public boolean getCloseTarget(){
-		if(hp>0){
-			return(closeTarget);
-		}
-		else{
-			return false;
-		}
+	public void getCloseTarget(){
+		return(closeTarget);
 	}
 
 	@Override
@@ -45,6 +38,29 @@ public abstract Unit implements Fighter{
 		}
 		else{
 			this.hp = 0;
+			this.alive = false;
 		}
 	}
+	
+	@Override
+	public boolean moveCloseTo(Unit guy){
+		if(getCloseTarget() != guy && this != guy){
+			System.out.println(getName() + " is moving closer to " + guy.getName() + ".");
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+
+	public void recoverAP(){
+		if(ap + 7 <= 50){
+			this.ap = ap + 7;
+		}
+		else{
+			this.ap = 50;
+		}
+	}
+}
+
 
