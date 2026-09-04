@@ -1,18 +1,18 @@
 public interface Fighter {
 
-	public abstract boolean equip(Weapon arme);
+	public boolean equip(Weapon arme);
 
-	public abstract boolean attack(Fighter personne);
+	public boolean attack(Fighter personne);
 
-	public abstract void receiveDamage(int damage);
+	public void receiveDamage(int damage);
 
-	public abstract boolean moveCloseTo(Fighter personne);
+	public boolean moveCloseTo(Fighter personne);
 
-	public abstract void recoverAp();
+	public void recoverAp();
 
-	public abstract String getName();
+	public String getName();
 
-	public abstract int getAp();
+	public int getAp();
 
-	public abstract int getHp();
+	public int getHp();
 }	
