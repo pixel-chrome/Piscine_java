@@ -26,7 +26,7 @@ public abstract class Monster extends Unit{
 			if(getAp() >= apCost){
 				System.out.println(getName() + " attacks " + guy.getName());
 				guy.receiveDamage(this.getDamage());
-				this.ap = ap - apCost;
+				this.ap = getAp() - apCost;
 				return true;
 			}
 			else{
