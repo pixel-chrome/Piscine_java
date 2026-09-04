@@ -35,7 +35,7 @@ public abstract class Monster extends Unit{
 		}
 		else{
 			System.out.println(getName() + ": I'm too far away from " + guy.getName() + ".");
-			retrun false;
+			return false;
 		}
 	}
-
+}
