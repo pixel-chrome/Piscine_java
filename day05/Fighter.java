@@ -8,7 +8,7 @@ public interface Fighter {
 
 	public boolean moveCloseTo(Fighter personne);
 
-	public void recoverAp();
+	public void recoverAP();
 
 	public String getName();
 
