@@ -2,7 +2,7 @@ public abstract class Unit implements Fighter{
 	private String name;
 	private int hp;
 	protected int ap;
-	private Unit closeTarget;
+	private Fighter closeTarget;
 	private boolean alive = true;
 
 	protected Unit(String name, int hp, int ap){
@@ -26,7 +26,7 @@ public abstract class Unit implements Fighter{
 		return(ap);
 	}
 
-	public Unit getCloseTarget(){
+	public Fighter getCloseTarget(){
 		return(closeTarget);
 	}
 
@@ -45,6 +45,7 @@ public abstract class Unit implements Fighter{
 	public boolean moveCloseTo(Fighter guy){
 		if(getCloseTarget() != guy && this != guy){
 			System.out.println(getName() + " is moving closer to " + guy.getName() + ".");
+			this.closeTarget = guy;
 			return true;
 		}
 		else{
