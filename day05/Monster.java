@@ -24,7 +24,7 @@ public abstract class Monster extends Unit{
 	public boolean attack(Fighter guy){
 		if(getCloseTarget() instanceof Unit){
 			if(getAp() >= apcost){
-				System.out.println(getName() + " attacks " + guy.getName());
+				System.out.println(getName() + " attacks " + guy.getName() + ".");
 				guy.receiveDamage(this.getDamage());
 				this.ap = getAp() - apcost;
 				return true;
