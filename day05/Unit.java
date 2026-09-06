@@ -1,6 +1,6 @@
 public abstract class Unit implements Fighter{
 	private String name;
-	private int hp;
+	protected int hp;
 	protected int ap;
 	private Fighter closeTarget;
 	private boolean alive = true;

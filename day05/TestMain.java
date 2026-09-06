@@ -9,7 +9,7 @@ public class TestMain{
 		PlasmaRifle gun = new PlasmaRifle();
 		PowerFist fist = new PowerFist();
 	
-		System.out.println("gun damage(21): " + gun.getDamage() + " apcost(5): " + gun.getApCost());
+		System.out.println("gun damage(21): " + gun.getDamage() + " apcost(5): " + gun.getApcost());
 
 		john.equip(gun);
 		mart.equip(fist);

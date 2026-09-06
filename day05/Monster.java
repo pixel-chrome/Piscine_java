@@ -38,4 +38,9 @@ public abstract class Monster extends Unit{
 			return false;
 		}
 	}
+
+	@Override 
+	public void receiveDamage(int damage){
+		this.hp = hp - damage;
+	}
 }
