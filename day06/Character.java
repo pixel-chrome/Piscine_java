@@ -1,9 +1,9 @@
 public abstract class Character implements Movable{
 	protected String name;
-	protected int life;
-	protected int agility;
-	protected int strength;
-	protected int wit;
+	protected int life = 50;
+	protected int agility = 2;
+	protected int strength = 2;
+	protected int wit = 2;
 	protected final String RPGClass;
 
 	public String getName(){
