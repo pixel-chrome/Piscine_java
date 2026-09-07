@@ -40,18 +40,18 @@ public abstract class Character implements Movable{
 	}
 
 	public void moveRight(){
-		System.out.println(getName() + ": moves right")
+		System.out.println(getName() + ": moves right");
 	}
 
     public void moveLeft(){
-				System.out.println(getName() + ": moves left")
+				System.out.println(getName() + ": moves left");
 	}
 
     public void moveForward(){
-				System.out.println(getName() + ": moves forward")
+				System.out.println(getName() + ": moves forward");
 	}
 
     public void moveBack(){
-				System.out.println(getName() + ": moves back")
+				System.out.println(getName() + ": moves back");
 	}
 }
