@@ -37,7 +37,7 @@ public abstract class SpaceMarine extends Unit{
     @Override 
     public boolean attack(Fighter personne){
         if(getWeapon() == null){
-            System.out.println(getName() + " : Hey, this is crazy. I'm not going to fight this empty-handed.");
+            System.out.println(getName() + ": Hey, this is crazy. I'm not going to fight this empty-handed.");
             return false;
         }
         else if (getAp() >= equippedWeapon.getApcost()){
@@ -59,6 +59,18 @@ public abstract class SpaceMarine extends Unit{
         else{
             return false;
         }
+    }
+
+    @Override
+    public boolean moveCloseTo(Fighter guy){
+        if(getCloseTarget() != guy && this != guy && getWeapon().isMelee() == false){
+			System.out.println(getName() + " is moving closer to " + guy.getName() + ".");
+			this.closeTarget = guy;
+			return true;
+		}
+		else{
+			return false;
+		}
     }
 
     @Override 
