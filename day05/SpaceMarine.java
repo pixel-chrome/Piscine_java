@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public abstract class SpaceMarine extends Unit{
     private Weapon equippedWeapon;
-    public ArrayList<SpaceMarine> squad = new ArrayList<SpaceMarine>();
+    private static ArrayList<SpaceMarine> squad = new ArrayList<SpaceMarine>();
 
     public SpaceMarine(String name, int hp, int ap){
         super(name, hp, ap);

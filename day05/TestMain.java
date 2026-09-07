@@ -14,6 +14,7 @@ public class TestMain{
 		john.equip(gun);
 		mart.equip(fist);
 
+		
 
 	}
 }
