@@ -63,7 +63,12 @@ public abstract class SpaceMarine extends Unit{
 
     @Override 
 	public void receiveDamage(int damage){
-		this.hp = hp - damage;
+        if(this.hp - damage >= 0){
+            this.hp = hp - damage;
+        }
+        else{
+            this.hp = 0;
+        }
 	}
 
     @Override 
