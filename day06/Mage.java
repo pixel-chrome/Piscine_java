@@ -1,6 +1,6 @@
-public class Mage extends Character{
+public class Mage extends Character {
 
-	public Mage(String name){
+	public Mage(String name) {
 		super(name, "Mage");
 		this.life = 70;
 		this.strength = 13;
@@ -10,27 +10,30 @@ public class Mage extends Character{
 	}
 
 	@Override
-	public void attack(String weapon){
-		if(weapon == "magic" || weapon == "sword"){
+	public void attack(String weapon) {
+		if (weapon == "magic" || weapon == "wand") {
 			System.out.println(getName() + ": Rrrrrrrrr....");
 			System.out.println(getName() + ": Feel the power of my " + weapon + "!");
 		}
 	}
 
 	@Override
-	public void moveRight(){
+	public void moveRight() {
 		System.out.println(getName() + ": moves right furtively.");
 	}
+
 	@Override
-   	public void moveLeft(){
+	public void moveLeft() {
 		System.out.println(getName() + ": moves left furtively.");
 	}
+
 	@Override
-  	public void moveForward(){
+	public void moveForward() {
 		System.out.println(getName() + ": moves forward furtively.");
 	}
+
 	@Override
-    	public void moveBack(){
+	public void moveBack() {
 		System.out.println(getName() + ": moves back furtively.");
 	}
 }
