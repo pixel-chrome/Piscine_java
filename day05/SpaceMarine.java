@@ -15,21 +15,13 @@ public abstract class SpaceMarine extends Unit{
 
     @Override
     public boolean equip(Weapon arme){
-        boolean isEquipped = false;
-        SpaceMarine Marine = null;
-        for(int i = 0; i < squad.size(); i++){
-            if(squad.get(i).getWeapon() == arme){
-                isEquipped = true;
-                Marine = squad.get(i);
-            }
-        }
-        if(isEquipped == false){
+        if(arme != null && arme.isEquipped() == false){
             this.equippedWeapon = arme;
+            arme.setEquipped(true);
             System.out.println(getName() + " has been equipped with a " + arme.getName() + ".");
             return true;
         }
         else{
-            System.out.println(arme.getName() + " is already equipped by: " + Marine.getName() + ".");
             return false;
         }
     }
