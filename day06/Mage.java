@@ -6,6 +6,7 @@ public class Mage extends Character{
 		this.strength = 13;
 		this.agility = 10;
 		this.wit = 10;
+		System.out.println(name + ": May the gods be with me.");
 	}
 
 	@Override
