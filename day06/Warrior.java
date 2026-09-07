@@ -16,4 +16,21 @@ public class Warrior extends Character{
 			System.out.println(getName() + ": I'll crush you with my " + weapon + "!");
 		}
 	}
+
+	@Override
+	public void moveRight(){
+		System.out.println(getName() + ": moves right like a bad boy.");
+	}
+	@Override
+    public void moveLeft(){
+				System.out.println(getName() + ": moves left like a bad boy.");
+	}
+	@Override
+    public void moveForward(){
+				System.out.println(getName() + ": moves forward like a bad boy.");
+	}
+	@Override
+    public void moveBack(){
+				System.out.println(getName() + ": moves back like a bad boy.");
+	}
 }
