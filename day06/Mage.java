@@ -3,7 +3,7 @@ public class Mage extends Character {
 	public Mage(String name) {
 		super(name, "Mage");
 		this.life = 70;
-		this.strength = 13;
+		this.strength = 3;
 		this.agility = 10;
 		this.wit = 10;
 		System.out.println(name + ": May the gods be with me.");
