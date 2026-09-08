@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class TestMain{
 	public static void main(String[] args){
 		Solo<String> strSolo = new Solo<>("toto");
@@ -13,6 +16,18 @@ public class TestMain{
 
 		Pair<String,Integer> dPair = new Pair<>("test",42);
 		dPair.display();
+
+		System.out.println("========================");
+		List<Mage> mages = new ArrayList<>();
+		mages.add(new Mage("Merlin"));
+		mages.add(new Mage("Mandrake"));
+		List<Warrior> warriors = new ArrayList<>();
+		warriors.add(new Warrior("Spartacus"));
+		warriors.add(new Warrior("Clovis"));
+		Battalion battalion = new Battalion();
+		battalion.add(mages);
+		battalion.add(warriors);
+		battalion.display();
 
 		System.out.println("________________________");
 		Character merlin = new Mage("Merlin", 12);
