@@ -9,6 +9,16 @@ public class Mage extends Character {
 		System.out.println(name + ": May the gods be with me.");
 	}
 
+	public Mage(String name, int capacity) {
+		super(name, "Mage");
+		this.life = 70;
+		this.strength = 3;
+		this.agility = 10;
+		this.wit = 10;
+		this.capacity = capacity; //pour le lore: magnétisme
+		System.out.println(name + ": May the gods be with me.");
+	}
+
 	@Override
 	public void attack(String weapon) {
 		if (weapon == "magic" || weapon == "wand") {
