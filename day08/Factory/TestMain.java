@@ -1,3 +1,5 @@
+package Factory;
+
 public class TestMain {
     public static void main(String[] args){
         Factory f = new Factory();

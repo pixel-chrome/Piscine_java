@@ -1,3 +1,5 @@
+package Factory;
+
 public class GiftPaper{
 	protected Toy gift;
 
