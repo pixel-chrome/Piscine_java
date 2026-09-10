@@ -1,3 +1,5 @@
+package Composite;
+
 public interface Sentence {
-    void print();
+    public void print();
 }

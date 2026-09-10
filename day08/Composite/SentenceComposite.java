@@ -1,7 +1,8 @@
-import java.util.List;
+package Composite;
+import java.util.ArrayList;
 
 public class SentenceComposite implements Sentence{
-    private List<Sentence> childSentence;
+    protected ArrayList<Sentence> childSentence = new ArrayList<>();
 
     @Override 
     public void print(){

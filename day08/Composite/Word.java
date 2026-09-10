@@ -1,5 +1,7 @@
+package Composite;
+
 public class Word implements Sentence{
-    private String word;
+    protected String word;
     
     public Word(String word){
         this.word = word;
