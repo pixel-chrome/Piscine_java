@@ -9,7 +9,7 @@ public class Elf {
 
     public Elf(Factory factory){
         this.factory = factory;
-        this.papers = factory.getPapers(0);
+        this.papers = new ArrayList<>();
     }
 
     public boolean pickToy(String toyName){
@@ -28,7 +28,7 @@ public class Elf {
     }
 
     public boolean pickPapers(int n){
-		papers.addAll(factory.getPapers(n));
+		this.papers.addAll(factory.getPapers(n));
 	    return true;
     }
 
@@ -38,7 +38,7 @@ public class Elf {
             return null;
         }
         
-        GiftPaper paper = papers.remove(0);
+        GiftPaper paper = this.papers.remove(0);
         if(toy != null ){
             paper.wrap(toy);
             System.out.println("And another kid will be happy!");
