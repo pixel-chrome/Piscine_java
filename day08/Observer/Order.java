@@ -1,11 +1,11 @@
 package Observer;
-import java.util.List;
+import java.util.ArrayList;
 
 public class Order implements Observable{
     protected String position;
     protected String destination;
     protected int timeBeforeArrival;
-    protected List<Observer> observers;
+    protected ArrayList<Observer> observers = new ArrayList<>();
 
 
     public String getPosition(){
@@ -24,11 +24,25 @@ public class Order implements Observable{
         this.position = setpos;
         this.destination = setdesti;
         this.timeBeforeArrival = settime;
+	notifyObservers();
     }
 
     @Override
+    public void addObserver(Observer obs){
+	    this.observers.add(obs);
+    }	
+
+    @Override
     public boolean notifyObservers(){
-        
+	if(observers.isEmpty()){
+		return false;
+	}
+	else{
+		for(Observer observer : observers){
+			observer.update(this);
+		}
+	}
+	return true;
     }
 
 }
