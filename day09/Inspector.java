@@ -14,13 +14,13 @@ public class Inspector<T>{
 		System.out.println("Superclass: " + inspectedClass.getSuperclass().getName());
 		
 		Method[] methods = inspectedClass.getDeclaredMethods();
-		System.out.println(methods.length + " methods: ");
+		System.out.println(methods.length + " methods:");
 		for(Method method : methods){
 			System.out.println("- " + method.getName());
 		}
 		
 		Field[] fields = inspectedClass.getDeclaredFields();
-		System.out.println(fields.length + "fields: ");
+		System.out.println(fields.length + " fields:");
 		for(Field field : fields){
 			System.out.println("- " + field.getName());
 		}
