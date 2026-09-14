@@ -1,4 +1,4 @@
-public class Lunch<D extends Food, S extends Food> extends Menu<D,S>{
+public class Lunch<D extends Drink, S extends Sandwich> extends Menu<D,S>{
     public Lunch(D drink, S sandwich){
         super(drink, sandwich);
     }
