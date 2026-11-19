@@ -1,0 +1,168 @@
+public class Gecko {
+	private String name="Unknown";
+	private int age;
+	private int energy = 100;
+	
+	public int getAge(){
+		return(age);
+	}
+	public void setAge(int age){
+		this.age = age;
+	}
+
+	public String getName(){
+		return(name);
+	}
+
+	public int getEnergy(){
+		return(energy);
+	}
+	public void setEnergy(int energy){
+		if(this.energy>=0 || this.energy <= 100){
+			this.energy = energy;
+		}
+	}
+
+	public void helloNewGecko(){
+		if(name != "Unknown"){
+			System.out.println("Hello " + name + "!");
+		}
+		else{
+			System.out.println("Hello!");
+		}
+	}
+
+	public Gecko(String name, int age){
+		this.name = name;
+		this.age = age;
+		helloNewGecko();
+	}
+
+	public Gecko(String name){
+		this.name = name;
+		helloNewGecko();
+	}
+
+	public Gecko(){
+		helloNewGecko();
+	}
+
+	public void status(){
+		String phrase;
+		switch(age){
+			case 0:
+				phrase = "Unborn Gecko";
+				break;
+			case 1,2:
+				phrase = "Baby Gecko";
+				break;
+			case 3,4,5,6,7,8,9,10:
+				phrase = "Adult Gecko";
+				break;
+			case 11,12,13:
+				phrase = "Old Gecko";
+				break;
+			default:
+				phrase = "Impossible Gecko";
+		}
+		System.out.println(phrase);
+	}
+
+	public void hello(String ami){
+		System.out.println("Hello " + ami +", I'm " + name + "!");
+	}
+	public void hello(int repete){
+		for(int i=0; i<repete; i++){
+			System.out.println("Hello, I'm "+ name + "!");
+		}
+	}
+
+	public void eat(String food){
+		String feeling;	
+		if(food.equalsIgnoreCase("Meat")){
+			feeling = "Yummy!";
+			if(energy<=90){
+				energy = energy + 10;
+			}
+		}
+		else if(food.equalsIgnoreCase("Vegetable")){
+			feeling = "Erk!";
+			if(energy>=10){
+				energy = energy - 10;
+			}
+		}
+		else{
+			feeling = "I can't eat this!";
+		}
+		System.out.println(feeling);
+	}
+
+	public void work(){
+		if(energy>=25){
+			System.out.println("I'm Working T.T");
+			energy = energy - 9;
+		}
+		else if(energy<=24){
+			System.out.println("Heyyy I'm too sleepy, better take a nap!");
+			energy = energy + 50;
+		}
+	}
+	
+
+	public void sayDrink(Gecko friend){
+		System.out.println("I'm going to drink with " + friend.name + "!");
+
+	}
+
+	public void saySorry(Gecko friend){
+		System.out.println("Sorry " + friend.getName() +  ", I'm too tired to go out tonight.");
+	}
+
+	public void sayTooBad(){
+		System.out.println("Oh! That's too bad, another time then!");
+	}
+
+	public void sayNotToday(){
+		System.out.println("Not today!");
+	}
+
+	public void snakeEnergy(){
+		System.out.println("LET'S RUN AWAY!!!");
+	}
+
+	public void snakeNoEnergy(){
+		System.out.println("...");
+	}
+
+	public void fraternize(Gecko friend){
+		if(energy >= 30 && friend.energy >= 30){
+			sayDrink(friend);
+			friend.sayDrink(this);
+		}
+		else if(energy >= 30 && friend.energy < 30){
+			friend.saySorry(this);
+			sayTooBad();
+		}
+		else if(energy < 30 && friend.energy >= 30){
+			saySorry(friend);
+			friend.sayTooBad();
+		}
+		else if(energy < 30 && friend.energy < 30){
+			sayNotToday();
+			friend.sayNotToday();
+		}
+
+	}
+
+	public void fraternize(Snake enemy){
+		if(energy >= 10){
+			snakeEnergy();
+			energy = 0;
+		}
+		else if (energy < 10){
+			snakeNoEnergy();
+		}
+	}
+
+
+}
